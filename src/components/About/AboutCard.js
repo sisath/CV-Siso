@@ -9,12 +9,12 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hey there, I am <span className="purple">Stanislav Angelov </span>
-            originally from <span className="purple"> Bulgaria</span>, but I have been living and working
+            originally from <span className="purple"> Bulgaria</span>, but I have been living, studying and working
             in <span className="purple"> London, United Kingdom.</span>
             <br />I am a Tech Specialist at QA Ltd.
             <br />
             <br />
-            Okay...you like to code, we get it, what else?
+            Okay...you are competitive and like to code, we get it, what else?
           </p>
           <ul>
             <li className="about-activity">
@@ -24,21 +24,24 @@ function AboutCard() {
             </li>
             <li className="about-activity">
               <BsArrowReturnRight /> I host bird fighting clubs, I am
-              kidding. I like to ride a bike through the forst.
-            </li>
-            <li className="about-activity">
-              <BsArrowReturnRight /> Drawing/Sketching, generally
-              an artistic person I would say.
+              kidding. Back in Bulgaria I like to go up in the mountains
+              and ride a bike through the forest. It's peaceful and relaxing.
+              I am not always on edge trying to compete, sometimes I want to 
+              switch off my brain and relax.
             </li>
             <li className="about-activity">
               <BsArrowReturnRight /> Fly Fishing, Google it!
+            </li>
+            <li className="about-activity">
+              <BsArrowReturnRight /> I like  to draw and sketch, I am generally
+              an artistic person I would say.
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Earth without "art" is "Eh"!"{" "}
           </p>
-          <footer className="blockquote-footer">Someone else, not me</footer>
+          <footer className="blockquote-footer">Wish I came up with this one </footer>
         </blockquote>
       </Card.Body>
     </Card>

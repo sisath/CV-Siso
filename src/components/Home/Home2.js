@@ -14,23 +14,38 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Jokes aside, let me <span className="purple"> INTRODUCE </span> myself.
+              Let me <span className="purple"> INTRODUCE </span> myself.
             </h1>
             <p className="home-about-body">
-              Originally from Bulgaria, I moved to London at the age 
-              of 11. I built my first personal computer at the age of 14
-              and ever since then I was addicted to technology. I was 
-              generally dissatisfied with the antivirus software 
-              on the market. Once, I purposly installed viruses 
-              directly into my System32 folder to test how reliable
-              these software would be, some did not even detect
-              one virus. So, I decided to create my own antivirus 
-              software in Java. Ever since then I have been making 
-              programs and applications.
+             Born in '96, Bulgaria in a small town called Silistra,
+             I have been competitive for as long as I can remember.
+             I started competing at age of 7, beginning from drawing and 
+             painting, then expanding to English Grammar Competitions to
+             Mathematical Competitions. I speak fluently 2 languages,
+             unless you count sarcasm, in which case it's 3. Back in my
+             teen years, I used to be heavily involved with gaming,
+             I used to competitively play multiple games such as CSGO,
+             WOW and others. I was invited to compete professionaly,
+             to become a "Pro Gamer", but I declined due to my stage
+             fright. I do not have regrets. I built my first PC at age of
+             14 and that's really when I started falling for technology.
+             Before I was interested in the end product, now I am curious
+             of what is going on behind the scenes. Couple months ago, 
+             I installed
+             viruses directly into my System32 folder, to test how
+             effective some antivirus products are, some of them found
+             a couple, some found none, so I thought I'd make my own
+             antivirus program. Ever since then I have been making
+             applications mainly for personal use.
+
               <br />
-              <br />I am proficient in
+              <br />I am experienced in coding with
               <i>
-                <b className="purple"> Java, JavaScript and Python </b>
+                <b className="purple"> Java </b>
+              </i>
+              and highly interested in getting better with
+              <i>
+              <b className="purple"> JavaScript and Python </b>
               </i>
               <br />
               <br />
@@ -66,7 +81,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>Impressed ?</h1>
+            <h1>Want to have a conversation ?</h1>
             <p>
               Don't be shy to <span className="purple">connect </span>with me on
             </p>
