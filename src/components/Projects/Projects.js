@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import video from "../../Assets/Website-Demo.mp4"
 
 function Projects() {
   return (
@@ -13,22 +13,30 @@ function Projects() {
           What Have I Been Up <strong className="purple">To </strong>
         </h1>
         <p style={{ color: "white" }}>
-          A couple things I am proud with!
+          Things I Personally Find Interesting !
         </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          
-          <h1>Uh Oh...there's nothing.. here?</h1>
-          
-          {/* <Col md={4} className="project-card">
+        <video src={video} autoPlay loop muted></video>
+
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Virus & AntiVirus"
+              description="In here I have created both a rather 
+              harmless virus and a script that deleted the virus.
+              The virus opens around 40-50 cmd.exe, leaves a message
+              and then activates the second part of the virus which
+              is the NotVirusTrustMe.vbs, which leaves certain
+              messages and alerts to the target that cannot be closed.
+              Ultimately the virus ends by letting the victim know that
+              their computer is going to be shut down, but for
+              demonstration purposes I have left that part of the script
+              out, otherwise I would not be able to record it. Overall
+              a harmless virus. The AntiVirus script, being SisoAV.bat
+              scans your computer and looks for particular lines of code
+              that could be considerated malicious."
             />
-          </Col> */}
+          </Col>
 
         </Row>
       </Container>
