@@ -9,32 +9,22 @@ import {
 } from "react-icons/si";
 import { FaAws, FaDocker } from "react-icons/fa";
 
-function Techstack() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaAws />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaDocker />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiApachemaven />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes />
-      </Col>
-    </Row>
-  );
-}
+const TechIcon = ({ icon: Icon }) => (
+  <Col xs={4} md={2} className="tech-icons">
+    <Icon />
+  </Col>
+);
+
+const Techstack = () => (
+  <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <TechIcon icon={SiJava} />
+    <TechIcon icon={SiSpringboot} />
+    <TechIcon icon={FaAws} />
+    <TechIcon icon={FaDocker} />
+    <TechIcon icon={SiPostgresql} />
+    <TechIcon icon={SiApachemaven} />
+    <TechIcon icon={SiKubernetes} />
+  </Row>
+);
 
 export default Techstack;

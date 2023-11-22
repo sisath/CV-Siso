@@ -1,31 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo1 from "../Assets/Logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
+import { CgGitFork, CgFileDocument } from "react-icons/cg";
+import { AiFillStar } from "react-icons/ai";
 
-function NavBar() {
+const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
+  const scrollHandler = () => {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -35,14 +41,12 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
           <img src={logo1} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          onClick={() => updateExpanded(!expand)}
         >
           <span></span>
           <span></span>
@@ -50,22 +54,18 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
+            <NavItemLink
+              to="/"
+              icon={<AiOutlineHome />}
+              label="Home"
+              updateExpanded={updateExpanded}
+            />
+            <NavItemLink
+              to="/about"
+              icon={<AiOutlineUser />}
+              label="About"
+              updateExpanded={updateExpanded}
+            />
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/sisath"
@@ -81,6 +81,14 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
+
+const NavItemLink = ({ to, icon, label, updateExpanded }) => (
+  <Nav.Item>
+    <Nav.Link as={Link} to={to} onClick={() => updateExpanded(false)}>
+      {icon} {label}
+    </Nav.Link>
+  </Nav.Item>
+);
 
 export default NavBar;
