@@ -1,17 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiPython,
-  SiFirebase,
-  SiNextdotjs,
   SiJava,
-  SiJavascript,
-  SiReact,
-  SiMongodb,
-  SiAngular,
   SiSpringboot,
-  SiTailwindcss
+  SiPostgresql,
+  SiApachemaven,
+  SiKubernetes
 } from "react-icons/si";
+import { FaAws, FaDocker } from "react-icons/fa";
 
 function Techstack() {
   return (
@@ -20,33 +16,23 @@ function Techstack() {
         <SiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJavascript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAngular />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiSpringboot />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
+        <FaAws />
       </Col>
-      
+      <Col xs={4} md={2} className="tech-icons">
+        <FaDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachemaven />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
     </Row>
   );
 }

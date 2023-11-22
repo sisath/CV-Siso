@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -14,76 +13,44 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Let me <span className="purple"> INTRODUCE </span> myself.
+              Introduction <span className="purple"> Time</span>...
             </h1>
             <p className="home-about-body">
-             Born in '96, Bulgaria in a small town called Silistra,
-             I have been competitive for as long as I can remember.
-             I started competing at age of 7, beginning from drawing and 
-             painting, then expanding to English Grammar Competitions to
-             Mathematical Competitions. I speak fluently 2 languages,
-             unless you count sarcasm, in which case it's 3. Back in my
-             teen years, I used to be heavily involved with gaming,
-             I used to competitively play multiple games such as CSGO,
-             WOW and others. I was invited to compete professionaly,
-             to become a "Pro Gamer", but I declined due to my stage
-             fright. I do not have regrets. I built my first PC at age of
-             14 and that's really when I started falling for technology.
-             Before I was interested in the end product, now I am curious
-             of what is going on behind the scenes. Couple months ago, 
-             I installed
-             viruses directly into my System32 folder, to test how
-             effective some antivirus products are, some of them found
-             a couple, some found none, so I thought I'd make my own
-             antivirus program. Ever since then I have been making
-             applications mainly for personal use.
+            Hey there! Currently I would describe myself as a  <i>
+            <b className="purple"> Java Software Engineer </b>
+            </i>, however my interesting and spark
+            for coding does not stop there!
 
-              <br />
-              <br />I am experienced in coding with
-              <i>
-                <b className="purple"> Java </b>
-              </i>
-              and highly interested in getting better with
-              <i>
-              <b className="purple"> JavaScript and Python </b>
-              </i>
-              <br />
-              <br />
-              I am mainly involved in designing & building &nbsp;
-              <i>
-                <b className="purple">RESTful APIs </b> ,my products
-                are all about {" "}
-                <b className="purple">
-                  optimal performance and high quality
-                </b>
-              </i>
-              <br />
-              <br />
-              Moreover, occasionaliy I like to get involved with
-              <b className="purple"> NodeJS & ExpressJS</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; such as
-              <i>
-                <b className="purple"> ReactJS and NextJS</b>
-              </i>
+            <br /><br />
+
+            At  <i><b className="purple"> GlobalLogic </b></i> I had a blast working on the Spatial Explorer, which
+            you could describe as an interactive heatmap, where users can input their data, watch it come to life on the map,
+            and analyse it however you see fit. Perhaps you would want to find out what would be the best place to build
+            a hospital based on population density and demographics? Hmm? I also worked alongside
+            <i><b className="purple"> NatWest </b></i>, working with Splunk, more specifically building SPL rules
+            involving search queries which purpose is to extract, analyse, and visualise data within the Splunk platform.
+            Perhaps you would want to have a specific SPL rule that searches for errors in a web server log and count the
+            occurrences of each unique message.
+
+            <br /><br />
+
+            This adventure began not long ago, I started off as a Software Development Trainee at
+            <i><b className="purple"> QA Consulting </b></i>.
+
+            <br /><br />
+
+            But before my coding adventures, I worked as an Associate Practitioner in Microbiology at St George's
+            University Hospitals NHS Trust. There, I supervised and trained Biomedical Support Workers, ensuring the
+            department ran like a well-oiled machine during the wild times of Virology & COVID-19.
+
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>Want to have a conversation ?</h1>
             <p>
-              Don't be shy to <span className="purple">connect </span>with me on
+              Do not hesitate to <span className="purple">connect </span>with me on either
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -96,6 +63,8 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+
+              or
               
               <li className="social-icons">
                 <a
