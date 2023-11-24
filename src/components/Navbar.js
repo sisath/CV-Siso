@@ -8,9 +8,8 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineUser,
-  AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
-import { CgGitFork, CgFileDocument } from "react-icons/cg";
+import { CgGitFork } from "react-icons/cg";
 import { AiFillStar } from "react-icons/ai";
 
 const NavBar = () => {

@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { BsArrowReturnRight } from "react-icons/bs";
 
 const AboutCard = () => (
   <Card className="quote-card-view">
