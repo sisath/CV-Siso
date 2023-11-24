@@ -91,12 +91,4 @@ const AboutCardContent = () => (
   </p>
 );
 
-const Testimonial = ({ text, footerText }) => (
-  <div>
-    <p style={{ color: "rgb(155 126 172)" }}>{`"${text}"`}</p>
-    <footer className="blockquote-footer">{footerText}</footer>
-  </div>
-);
-
-
 export default AboutCard;
