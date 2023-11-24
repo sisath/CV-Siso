@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import AboutCard from "./AboutCard";
 import Toolstack from "./Toolstack";
@@ -13,7 +12,6 @@ const AboutSection = () => (
       <AboutContent />
       <ProfessionalSkillset />
       <UsedTechnologies />
-      <Github />
     </Container>
   </Container>
 );
