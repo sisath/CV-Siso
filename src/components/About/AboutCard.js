@@ -6,7 +6,6 @@ const AboutCard = () => (
     <Card.Body>
       <blockquote className="blockquote mb-0">
         <AboutCardContent />
-        <AboutTestimonial />
       </blockquote>
     </Card.Body>
   </Card>
@@ -90,25 +89,6 @@ const AboutCardContent = () => (
      and I eagerly anticipate the next chapters of discovery and innovation that lie ahead.
 
   </p>
-);
-
-const AboutTestimonial = () => (
-  <div>
-    <Testimonial
-      text="Both unit tests and Integration tests are important"
-      footerText="Integration test helps to identify any issue for end-to-end calls while unit test gives a quicker response as it’s able to identify the issue within a specific function."
-    />
-
-    <Testimonial
-      text="Avoid using LinkedHashMap or LinkedHashSet"
-      footerText="It is expensive to use them because some of the resources are used to preserve the insertion order. If the ordering is important, try to define the natural order for the key and use TreeMap and SortedSet to implement it."
-    />
-
-    <Testimonial
-      text="Avoid unnecessary long database transactions even if it is read-only"
-      footerText="The connection may not return pure read-only transactions even if the option of 'read-only' is specified. Therefore, it may still lock the specific records in the database during the transaction. Also, the memory that is related to the transaction cannot be free until the transaction is completed. As a result, it hurts the performance."
-    />
-  </div>
 );
 
 const Testimonial = ({ text, footerText }) => (
